@@ -1,0 +1,49 @@
+	 Amino Acid Conservation Scores
+	=======================================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   F	    PHE1:B	-0.279		  6	-0.718, 0.003			    8,5			   19/91	F,Y
+   2	   V	    VAL2:B	 2.287		  1	 1.144, 2.915			    1,1			   32/91	V,L,P,T,A,N,C,S,G
+   3	   N	    ASN3:B	 1.591		  1	 0.830, 1.631			    2,1			   64/91	N,S,T,P,H,A,Q,G,F,E,D
+   4	   Q	    GLN4:B	 0.791		  2	 0.407, 1.144			    3,1			   91/91	Q,R,D,E,K,A,L,P,V,F,T,S
+   5	   H	    HIS5:B	 0.370		  4	 0.003, 0.596			    5,3			   91/91	H,Y,R,Q,L,K,S,T
+   6	   L	    LEU6:B	-0.901		  9	-1.086,-0.813			    9,8			   91/91	L,I,F
+   7	   C	    CYS7:B	-1.102		  9	-1.212,-1.051			    9,9			   90/91	C,X
+   8	   G	    GLY8:B	-1.005		  9	-1.151,-0.940			    9,9			   91/91	G,V
+   9	   S	    SER9:B	-0.288		  6	-0.554,-0.099			    7,5			   91/91	S,P,T,A,Y,R,I,K,D,E,G
+  10	   H	   HIS10:B	 0.084		  5	-0.192, 0.253			    6,4			   91/91	H,D,R,S,Q,N,E
+  11	   L	   LEU11:B	-1.118		  9	-1.212,-1.086			    9,9			   91/91	L
+  12	   V	   VAL12:B	-0.901		  9	-1.051,-0.813			    9,8			   91/91	V,L,I,T
+  13	   E	   GLU13:B	-0.772		  8	-0.940,-0.667			    9,8			   91/91	E,D,N,S
+  14	   A	   ALA14:B	-0.852		  8	-1.016,-0.767			    9,8			   91/91	A,T
+  15	   L	   LEU15:B	-1.118		  9	-1.212,-1.086			    9,9			   91/91	L
+  16	   Y	   TYR16:B	 0.738		  2	 0.253, 1.144			    4,1			   91/91	Y,F,H,M,N,S,V,L,I,T,Q
+  17	   L	   LEU17:B	 1.161		  1	 0.596, 1.631			    3,1			   91/91	L,M,F,I,Q,E,H
+  18	   V	   VAL18:B	-0.550		  7	-0.767,-0.426			    8,7			   91/91	V,I,L,T
+  19	   C	   CYS19:B	-0.981		  9	-1.151,-0.900			    9,9			   90/91	C,X,S
+  20	   G	   GLY20:B	-0.571		  7	-0.813,-0.426			    8,7			   91/91	G,R,A,S,W
+  21	   E	   GLU21:B	 1.553		  1	 0.830, 1.631			    2,1			   90/91	E,D,N,P,H,A,S,R
+  22	   R	   ARG22:B	 0.337		  4	 0.003, 0.596			    5,3			   89/91	R,K,Q,N,T,L,S,W,M
+  23	   G	   GLY23:B	-1.114		  9	-1.212,-1.086			    9,9			   90/91	G
+  24	   F	   PHE24:B	-0.766		  8	-0.979,-0.612			    9,7			   90/91	F,L,I
+  25	   F	   PHE25:B	 1.056		  1	 0.407, 1.631			    3,1			   90/91	F,Y,L,S,H,I,T,R,P,G
+  26	   Y	   TYR26:B	 0.497		  3	 0.003, 0.830			    5,2			   84/91	Y,F,A,V,S,H,W
+  27	   T	   THR27:B	 0.960		  1	 0.407, 1.144			    3,1			   82/91	T,Q,S,Y,I,N,A,L,R,M,D,G,V
+  28	   P	   PRO28:B	-0.183		  6	-0.492, 0.003			    7,5			   78/91	P,D,Q,T,N,S,K
+  29	   K	   LYS29:B	 1.515		  1	 0.830, 1.631			    2,1			   62/91	K,M,S,R,N,Q,T,E,A
+  30	   A	   ALA30:B	-0.439		  7	-0.900,-0.192			    9,6			   10/91	A,S
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

@@ -1,0 +1,177 @@
+	 Amino Acid Conservation Scores
+	=======================================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   G	         -	-0.805		  7*	-1.401,-0.454			    9,6			   4/300	G
+   2	   S	         -	-0.637		  7	-1.204,-0.299			    8,6			   6/300	S,N,A
+   3	   E	         -	 0.228		  4	-0.454, 0.716			    6,3			  13/300	E,N,S,A
+   4	   P	         -	-0.898		  7	-1.331,-0.595			    9,7			  18/300	P,S
+   5	   A	         -	-0.448		  6	-0.907,-0.122			    7,5			  23/300	A,P,T,V,L,S
+   6	   M	         -	 1.878		  1	 0.981, 2.364			    2,1			  31/300	M,A,V,Q,G,D,T,K,E,L,F,I
+   7	   E	         -	 1.863		  1	 0.981, 2.364			    2,1			  52/300	E,A,D,G,Q,S,N,L,I,K,T,H,R
+   8	   P	         -	 1.998		  1	 0.981, 2.364			    2,1			  72/300	P,D,E,A,G,T,N,V,Q,S,K,L,R
+   9	   E	    GLU8:D	 0.659		  3	 0.210, 0.981			    4,2			  92/300	E,D,A,T,P,V,G,Q,R,H,L,K,N,S
+  10	   T	    THR9:D	 0.740		  3	 0.349, 0.981			    4,2			 126/300	T,A,S,L,E,N,I,R,P,K,V,G,Q,g
+  11	   L	   LEU10:D	-0.273		  6	-0.526,-0.122			    6,5			 143/300	L,I,F,P,M,V,A,R,Y
+  12	   E	   GLU11:D	 0.122		  5	-0.215, 0.349			    6,4			 167/300	E,Q,S,D,K,G,F,T,A,N,V,I
+  13	   A	   ALA12:D	 1.228		  2	 0.716, 1.374			    3,1			 200/300	A,S,F,V,T,R,L,I,G,K,Y,D,N,E,Q,H,P
+  14	   R	   ARG13:D	 1.463		  1	 0.716, 1.374			    3,1			 219/300	R,W,S,L,I,V,F,E,A,M,Y,P,K,D,N,C,Q
+  15	   I	   ILE14:D	-0.706		  7	-0.907,-0.595			    7,7			 242/300	I,L,A,N,r,S,R,C,T,F,V,G,M
+  16	   N	   ASN15:D	 0.546		  4	 0.210, 0.716			    4,3			 248/300	N,T,D,P,Y,K,S,E,F,Q,A,L,y,R
+  17	   R	   ARG16:D	-0.238		  6	-0.454,-0.122			    6,5			 262/300	R,K,Q,G,E,A,H,M,S,N,L
+  18	   A	   ALA17:D	-1.395		  9	-1.569,-1.331			    9,9			 265/300	A,G,V,I,S,H,T
+  19	   T	   THR18:D	-1.693		  9	-1.895,-1.707			    9,9			 266/300	T,Q,F,C,I,V
+  20	   N	   ASN19:D	-0.478		  6	-0.660,-0.379			    7,6			 267/300	N,D,H,S,A,G,Y,F,T,L,C,R
+  21	   P	   PRO20:D	 0.320		  4	-0.023, 0.514			    5,4			 268/300	P,V,A,Q,R,I,E,D,S,G,N,H,Y
+  22	   L	   LEU21:D	 1.023		  2	 0.514, 1.374			    4,1			 269/300	L,S,V,T,M,G,I,N,C,Q,A,Y,H,K,R,D,F,s
+  23	   N	   ASN22:D	-0.432		  6	-0.660,-0.299			    7,6			 269/300	N,M,I,V,S,T,H,K,D,L,A,R,Q,f
+  24	   K	   LYS23:D	 1.207		  2	 0.716, 1.374			    3,1			 272/300	K,R,E,Q,P,A,S,L,V,T,H,D,N,G,M,I,Y
+  25	   E	   GLU24:D	 0.715		  3	 0.349, 0.981			    4,2			 275/300	E,S,D,Q,K,G,C,L,R,H,T,N,A,V
+  26	   L	   LEU25:D	-0.182		  5	-0.454,-0.023			    6,5			 276/300	L,V,T,A,E,I,Q,D,P,M,N,G,S,e
+  27	   D	   ASP26:D	-0.810		  7	-0.966,-0.724			    8,7			 282/300	D,N,H,E,T,K,S,R,G,Q
+  28	   W	   TRP27:D	-0.443		  6	-0.724,-0.299			    7,6			 282/300	W,V,P,T,I,F,S,R,L,A,E,K,Q,Y
+  29	   A	   ALA28:D	 1.713		  1	 0.981, 2.364			    2,1			 282/300	A,D,E,V,S,L,G,N,q,k,Q,l,M,T,Y,P,K,H
+  30	   S	   SER29:D	 0.890		  3	 0.514, 0.981			    4,2			 282/300	S,G,Y,T,C,N,D,F,A,K,L,H,I,M,V,Q,R
+  31	   I	   ILE30:D	-0.755		  7	-0.907,-0.660			    7,7			 283/300	I,V,T,L,Y,F,A,M,S,a,N,C,H
+  32	   N	   ASN31:D	 0.130		  5	-0.122, 0.210			    5,4			 283/300	N,D,Q,K,L,H,I,M,E,T,R,G,S,V
+  33	   G	   GLY32:D	 0.634		  3	 0.349, 0.716			    4,3			 285/300	G,A,S,R,N,Q,K,C,E,L,P,T,I,D,M,F,H
+  34	   F	   PHE33:D	-1.123		  8	-1.266,-1.025			    8,8			 286/300	F,C,L,V,I,v,A,T
+  35	   C	   CYS34:D	-1.217		  8	-1.401,-1.144			    9,8			 286/300	C,S,Y,F,W,A,I,N,V
+  36	   E	   GLU35:D	-0.462		  6	-0.660,-0.299			    7,6			 287/300	E,Q,D,H,N,A,K,S,G,L,V,I,T,Y,r,M
+  37	   Q	   GLN36:D	 1.332		  1	 0.716, 1.374			    3,1			 288/300	Q,T,E,K,L,R,H,M,F,V,I,A,S,Y,G,C
+  38	   L	   LEU37:D	-0.695		  7	-0.848,-0.595			    7,7			 289/300	L,I,V,T,M,A
+  39	   N	   ASN38:D	-0.646		  7	-0.848,-0.526			    7,6			 289/300	N,D,S,T,L,K,E,R,C,I,V,F,H,G,A
+  40	   E	   GLU39:D	 0.981		  2	 0.514, 1.374			    4,1			 292/300	E,K,Q,N,H,D,L,T,V,I,A,S,R,G,Y,M,C
+  41	   D	   ASP40:D	 0.355		  4	 0.086, 0.514			    5,4			 292/300	D,E,H,G,Q,S,A,N,Y,T,L,R,K,M,k,V,I,g
+  42	   F	   PHE41:D	 2.337		  1	 1.374, 2.364			    1,1			 291/300	F,P,L,Q,A,T,S,E,M,R,H,N,I,V,Y,D,K,G,g,q
+  43	   E	   GLU42:D	 1.189		  2	 0.716, 1.374			    3,1			 294/300	E,D,K,N,S,Q,T,G,H,A,V,W,I,C,L,R,n
+  44	   G	   GLY43:D	 0.484		  4	 0.086, 0.716			    5,3			 294/300	G,d,E,C,A,V,L,T,I,S,N,Q,y,K,R,P,H,a,Y,D
+  45	   P	   PRO44:D	 1.062		  2	 0.514, 1.374			    4,1			 293/300	P,T,S,H,I,A,V,C,a,G,Q
+  46	   P	   PRO45:D	-0.343		  6	-0.526,-0.215			    6,6			 295/300	P,Q,L,S,E,T,I,A,G,N,M,H,C,D,K,R,V,r
+  47	   L	   LEU46:D	 0.290		  4	-0.023, 0.514			    5,4			 295/300	L,I,H,Q,V,A,M,E,T,K,p,Y,D,N,F,S,e,d
+  48	   A	   ALA47:D	-1.080		  8	-1.266,-0.966			    8,8			 296/300	A,S,G,I,T,V,C,F,L,a,M,v
+  49	   T	   THR48:D	 0.698		  3	 0.349, 0.981			    4,2			 296/300	T,V,S,I,P,C,L,A,Q,K,M,H,F,R,v
+  50	   R	   ARG49:D	 0.242		  4	-0.023, 0.349			    5,4			 297/300	R,T,P,K,L,W,D,Q,H,N,G,V,A,S,C,M,F
+  51	   L	   LEU50:D	-0.420		  6	-0.595,-0.299			    7,6			 297/300	L,F,I,Y,C,A,V,T,M,S,E,G,R
+  52	   L	   LEU51:D	-0.781		  7	-0.966,-0.660			    8,7			 297/300	L,I,F,V,M,A
+  53	   A	   ALA52:D	-0.081		  5	-0.299, 0.086			    6,5			 297/300	A,S,G,V,E,T,L,I,M,K,R,Q,F
+  54	   H	   HIS53:D	-0.539		  6	-0.724,-0.454			    7,6			 298/300	H,Y,A,P,L,T,E,Q,S,I,K,R,F,G,N
+  55	   K	   LYS54:D	-1.291		  8	-1.478,-1.204			    9,8			 298/300	K,R,Y,L,F
+  56	   I	   ILE55:D	-0.584		  7	-0.786,-0.454			    7,6			 298/300	I,F,M,S,V,L,Y
+  57	   Q	   GLN56:D	 0.235		  4	-0.023, 0.349			    5,4			 297/300	Q,H,K,R,A,V,L,T,F,S,N,l,Y,M,h,G,t,s,c,I,E
+  58	   S	   SER57:D	-0.304		  6	-0.526,-0.215			    6,6			 297/300	S,C,P,L,T,A,V,G,q,Q,H,t,D,N,K,R,l,I,i
+  59	   P	   PRO58:D	 0.800		  3	 0.349, 0.981			    4,2			 297/300	P,A,L,S,I,V,H,T,Q,K,D,R,k,E,W,Y,C,G,N
+  60	   Q	   GLN59:D	-0.682		  7	-0.848,-0.595			    7,7			 298/300	Q,H,N,R,L,D,V,E,C,S,n,I,G,K
+  61	   E	   GLU60:D	-0.197		  6	-0.454,-0.023			    6,5			 298/300	E,D,V,T,S,K,A,Q,P,H,I,W,N,F,Y,G
+  62	   W	   TRP61:D	 0.814		  3	 0.514, 0.981			    4,2			 298/300	W,C,R,K,M,T,N,V,A,H,E,D,S,L,r,G,I,P,a,Q,k,F,Y,q
+  63	   E	   GLU62:D	-0.662		  7	-0.848,-0.526			    7,6			 299/300	E,Q,T,K,V,A,S,i,s,I,G,v,H,R,F
+  64	   A	   ALA63:D	-0.818		  7	-0.966,-0.724			    8,7			 300/300	A,S,C,T,V,I,f,v,i,Q,G,N,P,K,L,H
+  65	   I	   ILE64:D	 0.557		  4	 0.210, 0.716			    4,3			 300/300	I,V,L,M,E,F,Y,T,S,m,w,Q,H,l,W,s,K,C,g,R,A,G
+  66	   Q	   GLN65:D	 0.318		  4	-0.023, 0.514			    5,4			 300/300	Q,H,R,Y,F,I,N,L,G,A,C,S,y,f,l,P,K,i,V
+  67	   A	   ALA66:D	-0.687		  7	-0.848,-0.595			    7,7			 300/300	A,G,S,T,L,C,F
+  68	   L	   LEU67:D	-1.250		  8	-1.401,-1.144			    9,8			 300/300	L,V,I,T,F
+  69	   T	   THR68:D	-0.187		  5	-0.379,-0.023			    6,5			 300/300	T,M,L,A,E,Y,K,N,D,Q,S,V,I,G,R,F,H,C
+  70	   V	   VAL69:D	-0.938		  7	-1.084,-0.848			    8,7			 300/300	V,v,A,I,T,L,F,M,C
+  71	   L	   LEU70:D	-1.148		  8	-1.331,-1.025			    9,8			 300/300	L,V,T,I,A,M,F
+  72	   E	   GLU71:D	-1.206		  8	-1.401,-1.144			    9,8			 300/300	E,D,G,Q,H,N,S,K
+  73	   T	   THR72:D	-0.490		  6	-0.660,-0.379			    7,6			 300/300	T,E,A,M,V,I,N,S,L,R,Q,Y
+  74	   C	   CYS73:D	-1.061		  8	-1.204,-0.966			    8,8			 300/300	C,F,S,L,V,M,I,W
+  75	   M	   MET74:D	-0.983		  8	-1.144,-0.907			    8,7			 300/300	M,V,I,L,F,A,C,T,S
+  76	   K	   LYS75:D	-0.967		  8	-1.144,-0.848			    8,7			 300/300	K,R,N,S,T,Q,E,A,M,H
+  77	   S	   SER76:D	-1.393		  9	-1.569,-1.331			    9,9			 300/300	S,N,H,Y,R,Q,K,I,V
+  78	   C	   CYS77:D	-1.608		  9	-1.895,-1.569			    9,9			 300/300	C,G,S,T,I
+  79	   G	   GLY78:D	-1.410		  9	-1.569,-1.331			    9,9			 300/300	G,T,D,K,N,V,R
+  80	   K	   LYS79:D	 1.376		  1	 0.981, 1.374			    2,1			 300/300	K,R,S,E,A,D,Q,T,P,N,G,H,Y,F,V,I,L
+  81	   R	   ARG80:D	 2.026		  1	 0.981, 2.364			    2,1			 300/300	R,Q,P,S,K,Y,G,N,V,H,A,L,E,I,D,T,M,F
+  82	   F	   PHE81:D	-0.976		  8	-1.144,-0.848			    8,7			 300/300	F,L,V,I,M
+  83	   H	   HIS82:D	-1.068		  8	-1.204,-0.966			    8,8			 299/300	H,C,Q,Y,R,L,N,A,M,K,I
+  84	   D	   ASP83:D	 1.903		  1	 0.981, 2.364			    2,1			 300/300	D,N,S,T,G,K,R,Q,H,A,F,L,I,V,E,M,C,Y,P
+  85	   E	   GLU84:D	-1.058		  8	-1.204,-0.966			    8,8			 300/300	E,Q,L,K,R,D,H,A,V,M,Y
+  86	   V	   VAL85:D	-0.375		  6	-0.595,-0.215			    7,6			 300/300	V,A,I,E,M,L,T,C
+  87	   G	   GLY86:D	-0.230		  6	-0.454,-0.122			    6,5			 300/300	G,A,T,N,C,S,V,F,I,L,M
+  88	   K	   LYS87:D	-0.710		  7	-0.907,-0.595			    7,7			 300/300	K,R,T,S,N,Q,H,C,E,A,D
+  89	   F	   PHE88:D	-0.538		  6	-0.724,-0.379			    7,6			 300/300	F,Y,N,R,Q,K,I,E,S,H,G
+  90	   R	   ARG89:D	 0.186		  5	-0.122, 0.349			    5,4			 300/300	R,C,K,H,T,E,D,S,Q,N,I,G,A,P,s
+  91	   F	   PHE90:D	-1.207		  8	-1.401,-1.144			    9,8			 300/300	F,L,S,T,Y,I,V,N,W,n,M,y
+  92	   L	   LEU91:D	-0.604		  7	-0.786,-0.454			    7,6			 300/300	L,I,E,V,T,S,M,A,C,c,P
+  93	   N	   ASN92:D	-0.389		  6	-0.595,-0.299			    7,6			 299/300	N,T,Q,K,H,D,E,e,R,S,G,L,k,d,A,M
+  94	   E	   GLU93:D	-0.444		  6	-0.660,-0.299			    7,6			 299/300	E,D,A,N,Q,S,K,g,G,M,F,H
+  95	   L	   LEU94:D	-0.376		  6	-0.595,-0.215			    7,6			 299/300	L,M,I,F,V,A,C,Y
+  96	   I	   ILE95:D	-0.461		  6	-0.660,-0.379			    7,6			 299/300	I,V,F,M,R,L,A,K,S,Y,N,G,Q,T,H,E
+  97	   K	   LYS96:D	-0.235		  6	-0.454,-0.122			    6,5			 299/300	K,R,Y,Q,E,D,A,V,T,S,N,G,I
+  98	   V	   VAL97:D	-0.442		  6	-0.660,-0.299			    7,6			 299/300	V,L,I,M,S,H,Q,F,T,R,E
+  99	   V	   VAL98:D	-0.521		  6	-0.724,-0.379			    7,6			 299/300	V,L,I,A,F,Q,S,M,G
+ 100	   S	   SER99:D	-0.275		  6	-0.526,-0.122			    6,5			 257/300	S,A,T,L,W,I,Q,G,N,K,R,H,V,E,F,D,M
+ 101	   P	  PRO100:D	 0.470		  4	 0.086, 0.716			    5,3			 299/300	P,T,S,A,K,R,D,Q,N,G,M,E,I,V,H,L
+ 102	   K	  LYS101:D	-0.623		  7	-0.786,-0.526			    7,6			 299/300	K,M,R,E,S,G,Q,T,N,V,A,C
+ 103	   Y	  TYR102:D	-0.149		  5	-0.454, 0.086			    6,5			 189/300	Y,H,V,F,M,N,T,S,Q,R,C,G,I,W
+ 104	   L	  LEU103:D	 0.647		  3	 0.210, 0.981			    4,2			 183/300	L,Q,M,F,H,C,Y,A,R,D,G,N,S,E,T,P
+ 105	   G	  GLY104:D	-0.972		  8	-1.266,-0.786			    8,7			 118/300	G,S,A,P,D,p,I
+ 106	   S	  SER105:D	 2.300		  1	 1.374, 2.364			    1,1			 116/300	S,T,A,D,C,N,P,I,H,Q,E,M,V,L,G,F,K
+ 107	   R	  ARG106:D	 1.566		  1	 0.716, 2.364			    3,1			 113/300	R,W,K,S,N,T,H,Q,M,I,V,L,E,D,A,F
+ 108	   T	  THR107:D	 0.382		  4	 0.086, 0.514			    5,4			 286/300	T,S,A,I,V,P,K,N,C,L,Q,p,G,H,F,M,l,R,E
+ 109	   S	  SER108:D	-0.080		  5	-0.299, 0.086			    6,5			 297/300	S,P,T,M,D,A,N,E,H,Q,p,K
+ 110	   E	  GLU109:D	 2.038		  1	 0.981, 2.364			    2,1			 297/300	E,D,A,Q,T,V,P,S,K,N,I,F,G,M,L,H,R,Y
+ 111	   K	  LYS110:D	 2.156		  1	 1.374, 2.364			    1,1			 297/300	K,L,P,T,I,A,R,Q,S,E,H,M,N,V,D,F,Y
+ 112	   V	  VAL111:D	-1.109		  8	-1.266,-1.025			    8,8			 297/300	V,I,L,M,S,A,F
+ 113	   K	  LYS112:D	-0.791		  7	-0.966,-0.660			    8,7			 296/300	K,R,Q,T,S,V,H,C,A,M,I,G
+ 114	   N	  ASN113:D	 1.598		  1	 0.981, 2.364			    2,1			 296/300	N,S,T,L,K,A,R,G,D,Q,I,E,V,Y,H
+ 115	   K	  LYS114:D	-0.618		  7	-0.786,-0.526			    7,6			 296/300	K,R,E,M,Y,L,H,Q,T
+ 116	   I	  ILE115:D	-0.411		  6	-0.595,-0.299			    7,6			 296/300	I,V,L,C,A,T,S,F,M
+ 117	   L	  LEU116:D	-0.937		  7	-1.084,-0.848			    8,7			 296/300	L,I,V,E,T,A,M,K,R,C,W
+ 118	   E	  GLU117:D	 0.835		  3	 0.514, 0.981			    4,2			 295/300	E,Q,K,D,S,M,R,H,V,G,A,C,Y,N,F,T,L,I
+ 119	   L	  LEU118:D	 0.033		  5	-0.215, 0.210			    6,4			 294/300	L,V,I,M,T,C,H,F,Q,R,S,A
+ 120	   L	  LEU119:D	-0.468		  6	-0.660,-0.379			    7,6			 294/300	L,M,I,V,F
+ 121	   Y	  TYR120:D	-0.704		  7	-0.907,-0.595			    7,7			 293/300	Y,F,H,C,E,L,Q,K,R,D,V,M,N,A,G
+ 122	   S	  SER121:D	 0.113		  5	-0.122, 0.210			    5,4			 292/300	S,G,L,T,K,A,V,N,I,C,E,Q,R,D,v
+ 123	   W	  TRP122:D	-1.639		  9	-1.895,-1.569			    9,9			 292/300	W,L
+ 124	   T	  THR123:D	-0.555		  6	-0.724,-0.454			    7,6			 289/300	T,S,Q,Y,N,A,V,K,G,C,a,H,R,q
+ 125	   V	  VAL124:D	 0.910		  3	 0.514, 0.981			    4,2			 285/300	V,L,M,A,K,Q,T,R,I,H,C,S,E,D,d,F,N,Y,t,e,g,s
+ 126	   G	  GLY125:D	-0.145		  5	-0.379,-0.023			    6,5			 276/300	G,C,R,A,S,K,W,Q,H,E,V,D,I,T,Y,c,a,v,t,d,e,M
+ 127	   L	  LEU126:D	-0.711		  7	-0.907,-0.595			    7,7			 270/300	L,M,I,F,V,Y,H,f,G,s,a,S,T
+ 128	   P	  PRO127:D	 0.076		  5	-0.215, 0.210			    6,4			 261/300	P,S,K,M,Y,N,G,R,E,k,r,w,H,Q,q,n,A,g,C,e
+ 129	   E	  GLU128:D	 1.085		  2	 0.716, 1.374			    3,1			 260/300	E,Q,L,A,D,S,N,H,K,T,R,Y,s,t,d,G,h,q,a,n,g,e,k,V
+ 130	   E	  GLU129:D	 0.142		  5	-0.122, 0.349			    5,4			 251/300	E,D,L,K,Q,T,I,V,k,R,s,N,q,n,S,P,h,Y,G,d,t,M,A,a,H
+ 131	   V	  VAL130:D	 1.351		  1	 0.716, 1.374			    3,1			 246/300	V,A,L,T,S,Y,P,I,p,K,Q,E,G,a,g,v,D,R,d,H
+ 132	   K	  LYS131:D	-0.561		  6	-0.786,-0.454			    7,6			 240/300	K,N,E,L,G,D,g,v,I,Q,l,A,M,S,e,Y,a,T,H,d,y,i,p,f
+ 133	   I	  ILE132:D	-1.040		  8	-1.204,-0.966			    8,8			 238/300	I,V,L,F,Y,f,M,v,m
+ 134	   A	  ALA133:D	 1.347		  1	 0.716, 1.374			    3,1			 238/300	A,T,S,K,Q,R,F,G,N,I,C,V,P,E,Y,k,H,L,n
+ 135	   E	  GLU134:D	-0.145		  5	-0.379,-0.023			    6,5			 236/300	E,D,N,Q,K,V,R,H,A,Y,L,W,S,I,e,T,h
+ 136	   A	  ALA135:D	-0.831		  7	-1.025,-0.724			    8,7			 236/300	A,V,T,S,L,I,M,v,F,R
+ 137	   Y	  TYR136:D	-1.171		  8	-1.331,-1.084			    9,8			 236/300	Y,F,V,Q,I,L,H
+ 138	   Q	  GLN137:D	 1.212		  2	 0.716, 1.374			    3,1			 235/300	Q,Y,C,H,K,S,R,D,E,T,M,N,L,V,A,G,F
+ 139	   M	  MET138:D	-0.566		  7	-0.786,-0.454			    7,6			 235/300	M,T,L,A,S,K,N,E,D,I,Q,R,G
+ 140	   L	  LEU139:D	-1.495		  9	-1.707,-1.401			    9,9			 234/300	L,M,V,C
+ 141	   K	  LYS140:D	-0.889		  7	-1.084,-0.786			    8,7			 233/300	K,R,L,V,I,Q,M
+ 142	   K	  LYS141:D	 0.734		  3	 0.349, 0.981			    4,2			 233/300	K,R,G,T,V,S,D,Q,A,N,E,L,H,I,M
+ 143	   Q	  GLN142:D	-0.944		  8	-1.144,-0.848			    8,7			 232/300	Q,K,I,N,H,S,R,E,A,T,D
+ 144	   G	  GLY143:D	-1.194		  8	-1.401,-1.084			    9,8			 229/300	G,N,K,H,S,E
+ 145	   I	  ILE144:D	 0.156		  5	-0.122, 0.349			    5,4			 215/300	I,L,V,Y,H,F,G,A,P,q,h
+ 146	   V	  VAL145:D	-0.170		  5	-0.454,-0.023			    6,5			 158/300	V,L,I,E,Q,K,M,D,d,T,S,A,s,r,N
+ 147	   K	  LYS146:D	 0.014		  5	-0.299, 0.210			    6,4			 138/300	K,Q,M,T,L,S,A,E,N,H,D,F
+ 148	   S	  SER147:D	 2.245		  1	 1.374, 2.364			    1,1			 136/300	S,A,C,E,Q,F,L,T,V,K,H,R,D,N,P
+ 149	   D	  ASP148:D	-0.530		  6	-0.786,-0.379			    7,6			 136/300	D,E,P,T,K,S,Q,V,G,A
+ 150	   P	  PRO149:D	-0.308		  6	-0.660,-0.023			    7,5			 126/300	P,Q,M,A,p,I,L,T,S,K,D
+ 151	   K	         -	 1.555		  1	 0.716, 2.364			    3,1			 114/300	K,V,I,E,L,S,T,N,R,D,P,p,Q,H,A
+ 152	   L	         -	 1.292		  2	 0.716, 1.374			    3,1			 110/300	L,I,V,Y,F,H,D,T,A,P,S,E,K,M,Q
+ 153	   P	         -	 1.599		  1	 0.716, 2.364			    3,1			 105/300	P,S,T,M,L,V,I,D,Q,E,K,R
+ 154	   D	         -	 2.303		  1	 1.374, 2.364			    1,1			  96/300	D,E,P,M,V,A,N,L,G,R,K,Y,S,H,T,I
+ 155	   D	         -	 1.408		  1	 0.716, 2.364			    3,1			  82/300	D,G,E,N,K,T,S,Q,P,p,H,A
+ 156	   T	         -	 1.595		  1	 0.716, 2.364			    3,1			  57/300	T,A,V,Q,K,R,S,N,E
+ 157	   T	         -	-0.467		  6	-0.907,-0.122			    7,5			  27/300	T,P,L,V,D
+ 158	   F	         -	-0.123		  5	-0.848, 0.349			    7,4			   8/300	F,T
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.

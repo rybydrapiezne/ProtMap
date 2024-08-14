@@ -1,0 +1,55 @@
+	 Amino Acid Conservation Scores
+	=======================================
+
+- POS: The position of the AA in the SEQRES derived sequence.
+- SEQ: The SEQRES derived sequence in one letter code.
+- 3LATOM: The ATOM derived sequence in three letter code, including the AA's positions as they appear in the PDB file and the chain identifier.
+- SCORE: The normalized conservation scores.
+- COLOR: The color scale representing the conservation scores (9 - conserved, 1 - variable).
+- CONFIDENCE INTERVAL: When using the bayesian method for calculating rates, a confidence interval is assigned to each of the inferred evolutionary conservation scores.
+- CONFIDENCE INTERVAL COLORS: When using the bayesian method for calculating rates. The color scale representing the lower and upper bounds of the confidence interval.
+- MSA DATA: The number of aligned sequences having an amino acid (non-gapped) from the overall number of sequences at each position.
+- RESIDUE VARIETY: The residues variety at each position of the multiple sequence alignment.
+
+ POS	 SEQ	    3LATOM	SCORE		COLOR	CONFIDENCE INTERVAL	CONFIDENCE INTERVAL COLORS	MSA DATA	RESIDUE VARIETY
+    	    	        	(normalized)	        	               
+   1	   Y	         -	-0.120		  5	-0.564, 0.214			    7,4			   37/56	Y,F,H
+   2	   P	         -	-0.834		  8	-1.066,-0.676			    9,8			   48/56	P,F
+   3	   S	         -	 3.136		  1	 1.817, 3.179			    1,1			   48/56	S,P,T,N,V,A,I,L,Q,M
+   4	   K	         -	 0.030		  5	-0.366, 0.354			    7,4			   50/56	K,I,Q,N,Y,E,H
+   5	   P	         -	-1.047		  9	-1.200,-0.992			    9,9			   53/56	P
+   6	   D	         -	 2.384		  1	 1.299, 3.179			    1,1			   52/56	D,N,E,Q,A,T,V,S,K,Y,I
+   7	   N	         -	 0.792		  2	 0.214, 0.966			    4,1			   53/56	N,S,K,A,R,T,P,Y
+   8	   P	         -	-0.880		  9	-1.102,-0.777			    9,8			   54/56	P,T
+   9	   G	         -	 0.630		  2*	 0.089, 0.966			    5,1			   55/56	G,R,K,Q,S,D,T,A,P
+  10	   E	         -	 0.684		  2	 0.214, 0.966			    4,1			   55/56	E,D,N,S,P,T,G
+  11	   D	         -	 1.175		  1	 0.518, 1.817			    3,1			   55/56	D,G,A,S,N,H,V
+  12	   A	         -	-0.749		  8	-0.953,-0.622			    9,8			   55/56	A,I,T,E
+  13	   P	   PRO13:N	 0.546		  3*	 0.089, 0.966			    5,1			   55/56	P,A,S,L,G,T
+  14	   A	   ALA14:N	 0.701		  2	 0.214, 0.966			    4,1			   55/56	A,P,V,S,R,Q,L
+  15	   E	   GLU15:N	-0.806		  8	-1.030,-0.676			    9,8			   55/56	E,D,K
+  16	   D	   ASP16:N	-0.075		  5	-0.436, 0.214			    7,4			   55/56	D,E,Q
+  17	   M	   MET17:N	 0.765		  2	 0.214, 1.299			    4,1			   56/56	M,L,V,I,W
+  18	   A	   ALA18:N	 0.211		  4	-0.208, 0.518			    6,3			   56/56	A,N,T,S,L,I,Q,V
+  19	   R	   ARG19:N	 1.520		  1	 0.718, 1.817			    2,1			   56/56	R,K,Q,S,T,H,E
+  20	   Y	   TYR20:N	-0.629		  8	-0.912,-0.436			    9,7			   56/56	Y,F,C
+  21	   Y	   TYR21:N	 1.178		  1	 0.518, 1.817			    3,1			   56/56	Y,L,F,H,Q,N,V,A
+  22	   S	   SER22:N	 0.379		  3	-0.020, 0.718			    5,2			   56/56	S,T,A,N,R
+  23	   A	   ALA23:N	 0.022		  5	-0.366, 0.214			    7,4			   56/56	A,S,D,Y,E
+  24	   L	   LEU24:N	-0.294		  6	-0.676,-0.020			    8,5			   56/56	L,V,I
+  25	   R	   ARG25:N	-0.700		  8	-0.912,-0.564			    9,7			   56/56	R,S,Q,C
+  26	   H	   HIS26:N	-0.624		  8	-0.869,-0.502			    9,7			   56/56	H,Q,R
+  27	   Y	   TYR27:N	-1.021		  9	-1.200,-0.953			    9,9			   56/56	Y
+  28	   I	   ILE28:N	-0.587		  7	-0.824,-0.436			    8,7			   56/56	I,L,V
+  29	   N	   ASN29:N	-0.899		  9	-1.066,-0.824			    9,8			   56/56	N,K,D
+  30	   L	   LEU30:N	-0.356		  6	-0.676,-0.118			    8,5			   56/56	L,V,M,R
+  31	   I	   ILE31:N	-0.537		  7	-0.777,-0.366			    8,7			   56/56	I,V,L
+  32	   T	   THR32:N	-1.017		  9	-1.168,-0.953			    9,9			   56/56	T,N
+  33	   R	   ARG33:N	-1.090		  9	-1.200,-1.030			    9,9			   56/56	R
+  34	   Q	   GLN34:N	-0.363		  7	-0.676,-0.118			    8,5			   56/56	Q,A,P,H
+  35	   R	   ARG35:N	-0.945		  9	-1.136,-0.869			    9,9			   53/56	R,S
+  36	   Y	   TYR36:N	-0.578		  7	-0.912,-0.366			    9,7			   50/56	Y,F,W
+
+
+*Below the confidence cut-off - The calculations for this site were performed on less than 6 non-gaped homologue sequences,
+or the confidence interval for the estimated score is equal to- or larger than- 4 color grades.
