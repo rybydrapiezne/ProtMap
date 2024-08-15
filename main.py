@@ -1,9 +1,4 @@
 import os
-
-import pygame
-import sys
-from pymol import cmd, finish_launching
-from consurfDB import ConsurfDB
 import requests
 from bs4 import BeautifulSoup
 
