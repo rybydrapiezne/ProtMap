@@ -1,8 +1,6 @@
 # ProtMap <br>
 Project made for an internship at the University of Cincinnati, supervised by Dr. Jarek Meller <br>
 
-![UClogo](https://github.com/user-attachments/assets/6deac537-43a1-4eab-a34d-b5a29e88a64d)
-
 # About project <br>
 
 ## main.py script <br>
