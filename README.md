@@ -16,7 +16,7 @@ To run this script you will need to issue this command:
   python ./main.py
 
 ## embGen.py script <br>
-This script can be used to generate embeddings stored in `.h5` files used for generating UMap. This script utilize `ProstT5` model for generating protein embeddings. For each `fasta` file it will generate an embedding for the first chain in the file. All of the embeddings are already generated for the files in `fasta` folder in `embeddings`.
+This script can be used to generate embeddings stored in `.h5` files used for UMap visualization and exploration. This script utilize `ProstT5` model for generating protein embeddings. For each `fasta` file it will generate an embedding for the first chain in the file. All of the embeddings are already generated for the files in `fasta` folder in `embeddings`.
 
 ### Prerequisites <br>
 To run this script you will nedd to issue this commands:
