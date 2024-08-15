@@ -9,17 +9,17 @@ All of the data is already generated in the repo in folders: `classes` , `pdbs` 
 Running the script will regenerate all of the data needed using `rcsb` database and `pdb101`, they are necessary for running the rest of the scripts.
 
 ### Prerequisites <br>
-To run this script you will need to issue this command:
+To run main.py script you will need to issue this command:
 * pip
   ```sh
   pip install bs4
   python ./main.py
 
 ## embGen.py script <br>
-This script can be used to generate embeddings stored in `.h5` files used for UMap visualization and exploration. This script utilize `ProstT5` model for generating protein embeddings. For each `fasta` file it will generate an embedding for the first chain in the file. All of the embeddings are already generated for the files in `fasta` folder in `embeddings`.
+This script can be used to generate embeddings stored in `.h5` files used for UMap visualization and exploration. This script utilize `ProstT5` model for generating protein embeddings. For each `fasta` file it will generate an embedding for the first chain in the file. All of the embeddings are already generated for representative expamples from `pdb101` included in the `fasta` folder in `embeddings` folder.
 
 ### Prerequisites <br>
-To run this script you will nedd to issue this commands:
+To run embGen.py script you will nedd to issue this commands:
 * pip
   ```sh
   pip install transformers
@@ -33,7 +33,7 @@ This is the main script of this project. It will generate a UMap of the protien 
 <img width="223" alt="Screenshot 2024-08-14 at 16 26 02" src="https://github.com/user-attachments/assets/c58e2df8-bc04-49ad-8ece-a1e8d945b896">
 
 ### Prerequisites <br>
-To run this script you will need to issue this commands:
+To run ProtMap.py script you will need to issue this commands:
 * pip
   ```sh
   pip install h5py
